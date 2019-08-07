@@ -213,21 +213,248 @@ h1 a.navbar-brand span {
 	transform: skew(0deg, 6deg);
 }
 .wd_slider_textinfo h3:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 100%;
-	width: 50%;
-	background: #f07677;
-	z-index:-1;
-	-webkit-transform: skew(0deg, -6deg);
-	-moz-transform: skew(0deg, -6deg);
-	-ms-transform: skew(0deg, -6deg);
-	-o-transform: skew(0deg, -6deg);
-	transform: skew(0deg, -6deg);
-}​
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background: #f07677;
+    z-index:-1;
+    -webkit-transform: skew(0deg, -6deg);
+    -moz-transform: skew(0deg, -6deg);
+    -ms-transform: skew(0deg, -6deg);
+    -o-transform: skew(0deg, -6deg);
+    transform: skew(0deg, -6deg);
+}
 /*-- END SLIDER --*/
+.wd_heading{
+    float:left;
+    width:100%;
+    margin-bottom:60px;
+    text-align:center;
+    text-transform:uppercase;
+}
+.wd_heading h2{
+    float:left;
+    width:100%;
+    margin:0px;
+    font-size:55px;
+    text-transform:capitalize;
+    margin-bottom: 10px;
+}
+.wd_heading img{
+    display:inline-block;
+}
+/*-- GROOM AND BRIDE SECTION --*/
+.wd_about_wrapper{
+    float:left;
+    width:100%;
+    background-color:#ffffff;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.wd_about_infobox{
+    float:left;
+    width:100%;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #f8f8f8;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox.wd_right_side{
+    text-align:right;
+}
+.wd_about_infobox_img{
+    float:left;
+    width:100%;
+    text-align:center;
+    margin-bottom:0px;
+    position:relative;
+    z-index:1;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.wd_about_infobox_img img{
+    display:inline-block;
+    border: 3px solid #e1e1e1;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.wd_about_infobox:hover .wd_about_infobox_img img{
+    border: 3px solid #f07677;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox:hover .wd_about_infobox_img:after{
+    right:-5px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox_img:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 40px solid #f07677;
+    border-bottom: 25px solid transparent;
+    top: 50%;
+    margin-top: -25px;
+    right: 35px;
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox.wd_right_side .wd_about_infobox_img:after{
+    display:none;
+}
+.wd_about_infobox.wd_right_side .wd_about_infobox_img:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 40px solid #f07677;
+    border-bottom: 25px solid transparent;
+    top: 50%;
+    margin-top: -25px;
+    left: 35px;
+    z-index: -1;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox.wd_right_side:hover .wd_about_infobox_img:before{
+    left:-5px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox .title-blc{
+    float:left;
+    width:100%;
+    font-size:36px;
+    text-transform:capitalize;
+    font-family: 'Philosopher';
+    margin-top: 60px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox p{
+    float:left;
+    width:100%;
+}
+.wd_about_infobox h2{
+    float:left;
+    width:auto;
+    font-size:30px;
+    text-transform:capitalize;
+    color:#f07677;
+    margin: 10px 20px;
+    position:relative;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox h2:after{
+    content: "~";
+    position: absolute;
+    top: -1px;
+    left: -20px;
+    color: #f07677;
+    font-size: 50px;
+}
+.wd_about_infobox.wd_right_side h2{
+    float: right;
+    margin-left: 40px;
+    margin-right: 0;
+}
+.wd_about_infobox ul{
+    float:left;
+    width:auto;
+    margin:0px;
+    padding:0px;
+}
+.wd_about_infobox.wd_right_side ul{
+    float:right;
+}
+.wd_about_infobox ul li{
+    list-style:none;
+    display:inline-block;
+    width:auto;
+    margin:3px;
+}
+.wd_about_infobox ul li a{
+    float:left;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#000000;
+    border:1px solid #e4e4e4;
+    background-color:#ffffff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.wd_about_infobox ul li a:hover{
+    background-color:#f07677;
+    color:#ffffff;
+    border:1px solid #f07677;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+/*-- END GROOM AND BRIDE SECTION --*/
+/*-- COUNTER --*/
+.agileinfo_counter_section {
+    background: url(../img/counter.jpg);)no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    padding-top:7em;
+    min-height: 400px; text-align: center;
+}
+/*-- END COUNTER --*/
 
 /*-- MEDIA QUERIES --*/
 @media(max-width:767px){

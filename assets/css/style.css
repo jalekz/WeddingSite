@@ -7,8 +7,12 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'minimalregular', sans-serif;
     letter-spacing: 1px;
+}
+
+.ff-fira {
+    font-family: 'fira_sansregular';
 }
 
 /*-- Preloader css start --*/
@@ -55,8 +59,8 @@ h6 {
     margin-right: 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color:rgba(230, 0, 79, 0.9);
-	    border: 1px solid #fff;
+    color:#ea9478;
+    border: 1px solid #fff;
     border-radius: 50px;
     background: #fff;
 }
@@ -81,13 +85,13 @@ h6 {
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a:hover{
-    color:rgba(230, 0, 79, 0.9);
+    color:#ea9478;
 	    border: 1px solid #fff;
     border-radius: 50px;
     background: #fff;
 }
 .navbar-default .navbar-nav > li > a:focus {
-    color:rgba(230, 0, 79, 0.9);
+    color:#ea9478;
 	outline:none;
 }
 nav.navbar.navbar-default {
@@ -126,7 +130,7 @@ a.navbar-brand i{
 	color:#ff2d37;
 }
 h1 a.navbar-brand span {
-    color:rgba(230, 0, 79, 0.9);	
+    color:#ea9478;	
 }
 /*-- //nav --*/
 /*-- //header --*/ 
@@ -135,7 +139,7 @@ h1 a.navbar-brand span {
 .wd_slider_wrapper{
     float:left;
     width:100%;
-    background:url(../img/slider.jpg);
+    background:url(../img/home-banner.jpg);
     position:relative;
     background-attachment: fixed;
     position: relative;
@@ -156,19 +160,27 @@ h1 a.navbar-brand span {
 .wd_slider_textinfo{
     float: left;
     width: 100%;
-    padding: 200px 0px;
+    padding: 150px 0px;
     text-align: center;
     position:relative;
 }
 .wd_slider_textinfo img{
     display:inline-block;
 }
+.wd_slider_textinfo h1{
+    display: inline-block;
+    width: auto;
+    font-size: 72px;
+    color: #ffffff;
+}
+.wd_slider_textinfo h1 i{
+    color: #ea9478;
+}
 .wd_slider_textinfo h2{
     display: inline-block;
     width: auto;
     font-size: 52px;
     color: #ffffff;
-    text-transform: capitalize;
     margin: 40px 0px;
     padding: 20px;
     border-top: 1px solid #ffffff;
@@ -179,8 +191,7 @@ h1 a.navbar-brand span {
     width: 100%;
     color: #ffffff;
     font-size: 28px;
-    text-transform: capitalize;
-    font-family: 'Philosopher';
+    font-family: 'fira_sansregular';
     margin: 0px 0px 20px 0px;
 }
 .wd_slider_textinfo h3{
@@ -188,7 +199,7 @@ h1 a.navbar-brand span {
     width: auto;
     color: #ffffff;
     text-transform: capitalize;
-    font-family: 'Philosopher';
+    font-family: 'fira_sansregular';
     margin: 0px;
     font-size: 28px;
     position: relative;
@@ -204,13 +215,13 @@ h1 a.navbar-brand span {
 	left: 0;
 	height: 100%;
 	width: 51%;
-	background: #f07677;
+	background: #ea9478;
 	z-index:-1;
-	-webkit-transform: skew(0deg, 6deg);
-	-moz-transform: skew(0deg, 6deg);
-	-ms-transform: skew(0deg, 6deg);
-	-o-transform: skew(0deg, 6deg);
-	transform: skew(0deg, 6deg);
+	-webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
 }
 .wd_slider_textinfo h3:after {
     content: '';
@@ -219,13 +230,13 @@ h1 a.navbar-brand span {
     right: 0;
     height: 100%;
     width: 50%;
-    background: #f07677;
+    background: #ea9478;
     z-index:-1;
-    -webkit-transform: skew(0deg, -6deg);
-    -moz-transform: skew(0deg, -6deg);
-    -ms-transform: skew(0deg, -6deg);
-    -o-transform: skew(0deg, -6deg);
-    transform: skew(0deg, -6deg);
+    -webkit-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -ms-transform: skew(0deg, 0deg);
+    -o-transform: skew(0deg, 0deg);
+    transform: skew(0deg, 0deg);
 }
 /*-- END SLIDER --*/
 .wd_heading{
@@ -360,7 +371,7 @@ h1 a.navbar-brand span {
     width:100%;
     font-size:36px;
     text-transform:capitalize;
-    font-family: 'Philosopher';
+    font-family: 'fira_sansregular';
     margin-top: 60px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -445,7 +456,7 @@ h1 a.navbar-brand span {
 /*-- END GROOM AND BRIDE SECTION --*/
 /*-- COUNTER --*/
 .agileinfo_counter_section {
-    background: url(../img/counter.jpg);)no-repeat 0px 0px;
+    background: url(../img/counter.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -456,13 +467,305 @@ h1 a.navbar-brand span {
 }
 /*-- END COUNTER --*/
 
+/*-- TIMELINE --*/
+section {
+    margin: 4rem 0;
+    padding: 2rem 8rem;
+    overflow: hidden;
+    position: relative;
+}
+
+section.section-story ul.timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative
+}
+
+section.section-story ul.timeline:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(155, 155, 155, .5)
+}
+
+section.section-story ul.timeline>li {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative
+}
+
+section.section-story ul.timeline>li:hover .meta .timeline-thumbnail {
+    -webkit-filter: contrast(100%);
+    -moz-filter: contrast(100%);
+    -ms-filter: contrast(100%);
+    filter: contrast(100%)
+}
+
+section.section-story ul.timeline>li:nth-child(2n) {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+section.section-story ul.timeline>li:nth-child(2n) .meta {
+    padding-right: 0;
+    padding-left: 4em;
+    padding-left: 6vw
+}
+
+section.section-story ul.timeline>li:nth-child(2n) .meta .timeline-thumbnail {
+    margin-right: 0;
+    margin-left: auto;
+    position: relative
+}
+
+section.section-story ul.timeline>li:nth-child(2n) .meta .date {
+    left: 2em;
+    left: 6vw;
+    right: auto
+}
+
+section.section-story ul.timeline>li:nth-child(2n) .desc {
+    padding-left: 0;
+    padding-right: 4em;
+    padding-right: 6vw
+}
+
+section.section-story ul.timeline>li+li {
+    margin-top: 1em
+}
+
+section.section-story ul.timeline>li i.heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    font-size: 30px;
+    color: red;
+}
+
+section.section-story ul.timeline>li .desc,
+section.section-story ul.timeline>li .meta {
+    width: 50%
+}
+
+section.section-story ul.timeline>li .meta {
+    position: relative;
+    padding-right: 4em;
+    padding-right: 6vw
+}
+
+section.section-story ul.timeline>li .meta:before {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(155, 155, 155, .5);
+    top: 50%;
+    left: 0
+}
+
+section.section-story ul.timeline>li .meta .timeline-thumbnail {
+    width: 225px;
+    height: 225px;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-size: cover;
+    -webkit-filter: contrast(60%);
+    -moz-filter: contrast(60%);
+    -ms-filter: contrast(60%);
+    filter: contrast(60%);
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    transition: all ease .3s
+}
+
+section.section-story ul.timeline>li .meta .date {
+    font-size: 2em;
+    font-size: 3vw;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    top: 50%;
+    right: 2em;
+    right: 6vw;
+    -webkit-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    color: #9B9B9B
+}
+
+section.section-story ul.timeline>li .desc {
+    overflow: hidden;
+    padding-left: 4em;
+    padding-left: 6vw
+}
+/*-- END TIMELINE --*/
+/*-- EVENTS --*/
+section.section-events ul.event-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 52em;
+    max-width: 100%;
+    margin: 0 auto
+}
+
+section.section-events ul.event-list>li {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch
+}
+
+section.section-events ul.event-list>li+li {
+    margin-top: 3em;
+    padding-top: 3em;
+    box-shadow: 0 -1px 0 rgba(155, 155, 155, .3)
+}
+
+section.section-events ul.event-list>li .event-thumbnail {
+    width: 13em;
+    margin-right: 3em;
+    background-position: center center;
+    background-size: cover
+}
+
+section.section-events ul.event-list>li .event-details {
+    width: calc(100% - 16em);
+    overflow: hidden
+}
+
+section.section-events ul.event-list>li .event-details h3 {
+    font-family: dancing script, cursive;
+    font-size: 1.67em;
+    margin: 0
+}
+
+section.section-events ul.event-list>li .event-details ul.event-info {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 1em 0;
+    font-size: .9em;
+    font-weight: 700;
+    line-height: 1.8
+}
+
+section.section-events ul.event-list>li .event-details ul.event-info>li span {
+    display: inline-block;
+    color: #e86c6c;
+    width: 2em
+}
+
+section.section-events ul.event-list>li .event-details .desc {
+    color: #9b9b9b;
+    max-width: 100%
+}
+
+section.section-events ul.event-list>li .event-details .cta a.btn+a.btn {
+    margin-left: 1em
+}
+/*-- END EVENTS --*/
+/*-- GIFTS --*/
+section.section-gifts .retailer-list .row+.row {
+    margin-top: 2em
+}
+
+section.section-gifts .retailer-list .row .retailer-thumbnail {
+    border: 1px solid rgba(155, 155, 155, .5);
+    height: 100px;
+    text-align: center;
+    line-height: calc(100px - 2em);
+    padding: 1em 2em
+}
+
+section.section-gifts .retailer-list .row .retailer-thumbnail>img {
+    max-height: 100%
+}
+
+section.section-gifts .retailer-list .row .retailer-thumbnail+h4 {
+    text-align: center;
+    font-weight: 400;
+    margin: .5em 0 0;
+    font-size: 1em
+}
+/*-- END GIFTS --*/
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 26px;
+    right: 2%;
+    overflow: hidden;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: url("../img/arr.png") no-repeat 0px 0px;
+    background-size: 40px;
+}
+
+#toTopHover {
+    width: 40px;
+    height: 40px;
+    display: block;
+    overflow: hidden;
+    float: right;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
 /*-- MEDIA QUERIES --*/
-@media(max-width:767px){
+@media only screen and (max-width:991px) {
+    .flex-responsive {
+        display: block!important
+    }
+    .flex-responsive>aside,
+    .flex-responsive>div,
+    .flex-responsive>li,
+    .flex-responsive>ul {
+        width: 100%!important;
+        margin: 0!important
+    }
+    section.section-events ul.event-list>li .event-details .cta a.btn {
+        font-size: .7em;
+        letter-spacing: 2px;
+        padding: .8em 1.2em
+    }
+    section.section-events ul.event-list>li .event-thumbnail {
+        padding-top: 100%;
+        margin-bottom: 1em!important
+    }
+}
+
+@media(max-width:767px) {
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	    position: absolute;
 	    width: 100%;
 	    z-index: 999;
-	    background: rgb(0, 0, 0);
+	    background: white;
 	    padding: 0em 0;
 	    margin-top: 0em;
 	    z-index: 9999;
@@ -474,14 +777,14 @@ h1 a.navbar-brand span {
 			margin: 0.5em 0 0;
 		}
 		.navbar-default .navbar-toggle {
-	     background: rgb(255, 104, 156);
+	     background: #ea9478;
 	    border-radius: 5px;
 		}
 	.navbar-default .navbar-toggle .icon-bar {
 	    background-color: #fff;
 	}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	    background:rgb(255, 44, 117);
+	    background:#ea9478;
 	}
 		.navbar-default .navbar-nav > li > a {
 	    text-align: center;
@@ -494,4 +797,18 @@ h1 a.navbar-brand span {
 	    width: 131px;
 	    margin: 7px auto;
 	}
+}
+
+@media only screen and (max-width:767px) {
+    section.section-events ul.event-list>li .event-details .cta a.btn {
+        display: block
+    }
+    section.section-events ul.event-list>li .event-details .cta a.btn+a.btn {
+        margin: 0;
+        margin-top: 1em
+    }
+    section.section-gifts .col-sm-6+.col-sm-6,
+    section.section-gifts .retailer-list .row+.row {
+        margin-top: 1em
+    }
 }

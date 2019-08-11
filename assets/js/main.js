@@ -1,6 +1,23 @@
 $(document).ready(function(){
 	$("#heart-loader").delay(1500).fadeOut("slow");
 	CounterDown();
+	//scroll menú
+	$(".scroll").click(function (event) {
+		event.preventDefault();
+		$('html,body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 900);
+	});
+	//scroll top
+	var defaults = {
+		containerID: 'toTop', // fading element id
+		containerHoverID: 'toTopHover', // fading element hover id
+		scrollSpeed: 1200,
+		easingType: 'linear'
+	};	
+	$().UItoTop({
+		easingType: 'easeOutQuart'
+	});
 });
 
 function CounterDown() {

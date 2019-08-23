@@ -458,6 +458,15 @@ h1 a.navbar-brand span {
     padding-top:7em;
     min-height: 400px; text-align: center;
 }
+#counter span{
+    font-size: 25px;
+}
+
+.counterDown i.heart{
+    font-size: 50px;
+    color: #ea9478;
+    padding: 20px 0px;
+}
 
 /*-- BANNERS --*/
 .bannerSection1 {
@@ -482,8 +491,7 @@ h1 a.navbar-brand span {
 /*-- END BANNERS --*/
 
 /*-- TIMELINE --*/
-section {
-    margin: 4rem 0;
+section {    
     padding: 2rem 8rem;
     overflow: hidden;
     position: relative;
@@ -673,8 +681,8 @@ section.section-events ul.event-list>li .event-details {
 }
 
 section.section-events ul.event-list>li .event-details h3 {
-    font-family: dancing script, cursive;
-    font-size: 1.67em;
+    font-family: 'fira_sansregular';
+    font-size: 1.8em;
     margin: 0
 }
 
@@ -695,13 +703,31 @@ section.section-events ul.event-list>li .event-details ul.event-info>li span {
 }
 
 section.section-events ul.event-list>li .event-details .desc {
-    color: #9b9b9b;
-    max-width: 100%
+    color: #777777;
+    max-width: 100%;
+    font-size: 14px;
 }
 
 section.section-events ul.event-list>li .event-details .cta a.btn+a.btn {
     margin-left: 1em
 }
+
+section.section-events ul.event-list>li .event-details li {
+    font-family: 'fira_sansregular';
+    font-size: 14px;
+}
+
+.btn-rosegold {
+    background-color: #ea9478;
+    border-color: #ea9478;
+}
+
+.btn-rosegold:hover {
+    background-color: #ffffff;
+    border-color: #ea9478;
+    color: #ea9478;    
+}
+
 /*-- END EVENTS --*/
 /*-- GIFTS --*/
 section.section-gifts .retailer-list .row+.row {
@@ -752,6 +778,9 @@ section.section-gifts .retailer-list .row .retailer-thumbnail+h4 {
     opacity: 0;
     -moz-opacity: 0;
     filter: alpha(opacity=0);
+}
+.gallery, .section-events, .section-story {
+    padding: 0rem 2rem 8rem;
 }
 
 

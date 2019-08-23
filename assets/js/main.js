@@ -40,8 +40,8 @@ function CounterDown() {
 	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	    
 	  // Output the result in an element with id="demo"
-	  $("#counter").html(days + "d " + hours + "h "
-	  + minutes + "m " + seconds + "s ");
+	  $("#counter").html(days + "<span>días</span> " + hours + "<span>horas</span> "
+	  + minutes + "<span>minutos</span> " + seconds + "<span>segundos</span> ");
 	    
 	  // If the count down is over, write some text 
 	  if (distance < 0) {

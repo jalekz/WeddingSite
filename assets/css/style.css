@@ -902,3 +902,9 @@ section.section-gifts h3{
         margin-top: 1em
     }
 }
+
+@media only screen and (max-width:450px) {
+    .section-gifts img {
+        width: 100%;
+    }
+}
